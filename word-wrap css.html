@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word wrap properties</title>
+</head>
+<style>
+.container {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid yellow;
+    margin: 20px auto;
+}
+
+.no-wrap {
+    overflow-wrap: normal; 
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.wrap {
+    overflow-wrap: break-word;
+    background-color: #d9edf7;
+    padding: 10px;
+}
+</style>
+<body>    
+<h3> The word-wrap property in CSS commonly known as overflow-wrap is used to handle how words are 
+broken and wrapped onto the next line when they are too long to fit within their container. 
+This is particularly useful when dealing with long words or strings of text that might otherwise
+ overflow their container.</h3>
+<hr>
+<p>1.word-wrap (Deprecated)
+Values
+    normal: Words will only break at normal line break points (default behavior).
+    break-word: Words that are too long to fit will break at arbitrary points to prevent overflow.</p> <br><hr>
+2.overflow-wrap (Current Standard)
+Values
+    normal: Breaks only at allowed points (same as word-wrap: normal).
+   nbreak-word: Breaks long words to prevent overflow (same as word-wrap: break-word).
+<hr>
+
+<div class="container">
+    <h3>No Word Wrap (normal):</h3>
+    <div class="no-wrap">
+        ThisIsAReallyLongWordThatWillNotBreakEvenIfItOverflowsItsContainerWithoutWordWrap.
+    </div>
+</div>
+
+<div class="container">
+    <h3>Word Wrap (break-word):</h3>
+    <div class="wrap">
+        ThisIsAReallyLongWordThatWillBreakAndWrapOntoTheNextLineWhenItReachesTheEndOfTheContainer.
+    </div>
+</div>
+</body>
+</html>
