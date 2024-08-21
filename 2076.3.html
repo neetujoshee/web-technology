@@ -1,0 +1,46 @@
+
+
+<!--1. Static: Static positioning is the default that every element gets.are not affected by the top, bottom, left, and right properties.
+2. Relative: Relative positioning changes the position of the HTML element relative to where it normally appears.  Setting the top, right, bottom, and left properties.
+3. Fixed: An element with position: fixed; 
+is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+4. Absolute: An element with position: absolute is positioned at the specified coordinates relative to our screen top-left corner.
+top-right corner bottom-left corner etc.
+5. Sticky:An element with position: sticky; 
+is positioned based on the user’s scroll position.A sticky element toggles between relative and fixed, 
+depending on the scroll position.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning of elements</title>
+<!-- For external css add this for easy i'm using internal css<link href="stylee.css" rel="stylesheet"> -->
+ <style>
+    .content{
+    position: fixed;
+    border-style: solid;
+    width: 2px solid black;
+}
+#p1{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+#p2{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+ </style>
+</head>
+<body>
+    <div class="content">
+    <p id="p1">This is one paragraph w relative positioning</p>
+<br>
+      <p id="p2">This is two paragraph w absolute positioning</p>
+      </div>
+</body>
+</html>
