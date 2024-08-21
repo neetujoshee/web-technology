@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css border</title>
+<style>
+h1::first-line{
+    color: red;
+    background-color: yellow;
+    word-spacing: normal;
+    letter-spacing: 1cap;
+    text-decoration: underline;
+    vertical-align: bottom;
+    line-height: 2cap;
+}
+h1::first-letter{
+    color: green;
+    background-color: seashell;
+}
+/*
+body{
+    background-image: url(nits.jpg);
+    background-repeat: repeat;
+    background-color: green;
+    background-position: right top;
+    background-attachment: scroll;
+} */
+ body{
+    background-color: seagreen;
+ }
+table{
+    color: whitesmoke;
+    background-color: yellowgreen;
+    border-style:groove ;
+    border-width: medium;
+     /* INDIVIDUAL SIDES There is properties for specifyings each of the borders
+    (top,right,bottom,left)*/
+    border-top-style: dashed;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: double;
+      /* CSS border shorthand property
+    we can specify all the individual border property
+    in one property */
+    border: 5px solid red;
+    border: radius 5px;
+    border-left: 6px dotted yellow;
+    border-right: 8px dashed saddlebrown
+}
+p2{
+    text-decoration: overline;
+    text-decoration: underline;
+}
+p3{
+    text-decoration: line-through;
+    text-decoration-color: blueviolet;
+}
+h4{
+    text-decoration: overline underline;
+    text-decoration-color: paleturquoise;
+}
+
+</style>
+
+
+</head>
+<body>
+    <h1> <center>THIS IS TABLE</center> </h1>
+   <center> <p1 style="color: seagreen; background-color: cornflowerblue;line-height: 4cap;">
+    this is my first ever paragraph </p1> </center>
+    <p2> My name is guthi </p2> <br>
+    <p3> My name is khan</p3>
+    <h4> I'M the donnn</h4>
+    <table border="" align="center">
+        <tr>
+        <th> fruits</th>
+        <th> animals</th>
+        <th> country</th>
+    </tr>
+    <tr>
+        <td> apple</td>
+        <td> lion</td>
+        <td> MERO NEPAL </td>
+    </tr>
+    <tr>
+        <td>banana</td>
+        <td> Rat</td>
+        <td> NEPAL MERO</td>
+
+    </tr>
+    </table>
+</body>
+</html>
