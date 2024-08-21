@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Example</title>
+   <!--<link rel="stylesheet" href="styles.css"> Link to external CSS file -->
+</head>
+<style>
+    /* Styling for the box model */
+.box-model {
+    width: 200px;; /* Content width */
+    height: 100px; /* Content height */
+    padding: 20px; /* Padding around the content */
+    border: 10px solid rgb(78, 241, 14) ; /* Border around the padding */
+    border-radius: 1;
+    border-style: dashed;
+    margin: 30px; /* Margin outside the border */
+    background-color: lightblue; /* Background color for the content */
+    box-sizing: content-box; /* Default behavior, content width + padding + border = total width */
+}
+
+</style>
+<body>
+    <div class="box-model">
+    bigbox model
+    </div>
+</body>
+</html>
